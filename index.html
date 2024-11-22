@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robotics Club Form</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Press Start 2P', cursive; /* Retro font */
+            margin: 0;
+            padding: 0;
+            background-color: #00008B; /* Dark Blue background */
+            color: #00FF0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #FF00FF; 
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            color: #39FF14; /* Neon Green */
+        }
+
+        h2, h3 {
+            font-size: 1.5em;
+            color: #FF00FF; /* Bright pink */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styles */
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            font-size: 1.2em;
+            color: #FFFFFF;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #FF00FF;
+            border-radius: 5px;
+            font-size: 1.2em;
+            background-color: #222222;
+            color: #FFFFFF;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #39FF14; /* Neon Green */
+            color: #000;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00CC00; /* Darker green on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1a1a1a; /* Dark gray */
+            color: #00FF00; /* Neon green */
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color:lightcoral;">Robotics Club Form</span></h1>
+    </header>
+
+    <div class="container">
+        <form>
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email">
+
+            <!-- Phone Number -->
+            <label for="number">Phone Number:</label>
+            <input type="number" id="number" name="number">
+
+            <!-- Preferred Robotic Topics -->
+            <h2>Preferred Robotic Topics</h2>
+            <label for="autonomous-robots">
+                <input type="radio" id="autonomous-robots" name="topic" value="Autonomous Robots"> Autonomous Robots
+            </label>
+            <br>
+            <label for="robot-manipulation">
+                <input type="radio" id="robot-manipulation" name="topic" value="Robot Manipulation and Grasping"> Robot Manipulation and Grasping
+            </label>
+            <br>
+            <label for="robot-vision">
+                <input type="radio" id="robot-vision" name="topic" value="Robot Vision and Perception"> Robot Vision and Perception
+            </label>
+            
+            <!-- Robotics Experience Level -->
+            <h3>Robotics Experience Level</h3>
+            <label for="beginner">
+                <input type="radio" id="beginner" name="experience" value="Beginner"> Beginner
+            </label>
+            <br>
+            <label for="intermediate">
+                <input type="radio" id="intermediate" name="experience" value="Intermediate"> Intermediate
+            </label>
+            <br>
+            <label for="advanced">
+                <input type="radio" id="advanced" name="experience" value="Advanced"> Advanced
+            </label>
+            <br><br>
+            <!-- Preferred Robotic Topics -->
+            <h3>Preferred Robotic Topics</h3>
+            	 <label for="section">Topics</label>
+	 <select id="Preffered Topics" name="options">
+	 <option value="">......</option>
+	 <option value="">......</option>
+	 <option value="">......</option>
+     <option value="">......</option>
+</select>
+     <br><br> 
+     <!-- Submit Button -->
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+        </form>
+    </div>
+</body>
+</html>
+
